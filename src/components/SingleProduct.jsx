@@ -40,12 +40,13 @@ export default function SingleProduct() {
                     pic: product.pic1,
                     price: product.finalprice,
                     qty: parseInt(qty),
-                    total: product.finalprice * qty,
+                    total: product.finalprice * qty,  
                 }
                 dispatch(createCart(item))
             }
             navigate("/cart")
         }
+        
     }
 
     function addToWishlist() {
